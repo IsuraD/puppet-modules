@@ -13,7 +13,9 @@
 # limitations under the License.
 
 ---
-wso2::mgt_hostname: mgt.esb.dev.wso2.org
+wso2::service_name: wso2esb
+wso2::hostname: "esb.dev.wso2.org"
+wso2::mgt_hostname: "mgt.esb.dev.wso2.org"
 
 # Defines WSDL EPR Prefix
 wso2::esb_wsdl_epr_prefix:
@@ -51,20 +53,20 @@ wso2::clustering:
 #     tag_key: tag-key
 #     tag_value: tag-value
 
-wso2::registry_mounts:
-  wso2_config_db:
-    path: /_system/config/esb
-    target_path: /_system/config/esb
-    read_only: false
-    registry_root: /
-    enable_cache: true
+#wso2::registry_mounts:
+#  wso2_config_db:
+#    path: /_system/config/esb
+#    target_path: /_system/config/esb
+#    read_only: false
+#    registry_root: /
+#    enable_cache: true
 
-  wso2_gov_db:
-    path: /_system/governance
-    target_path: /_system/governance
-    read_only: false
-    registry_root: /
-    enable_cache: true
+#  wso2_gov_db:
+#    path: /_system/governance
+#    target_path: /_system/governance
+#    read_only: false
+#    registry_root: /
+#    enable_cache: true
 
 wso2::dep_sync:
   enabled: false

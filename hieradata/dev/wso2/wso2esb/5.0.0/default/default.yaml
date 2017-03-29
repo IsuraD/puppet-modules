@@ -16,8 +16,8 @@ classes:
   - wso2esb
 
 wso2::service_name: wso2esb
-wso2::hostname: "%{::fqdn}"
-wso2::mgt_hostname: "%{::fqdn}"
+wso2::hostname: "esb.wso2.com"
+wso2::mgt_hostname: "mgt.esb.wso2.com"
 
 ## Uncomment the following for a clustered setup
 #wso2::file_list:
